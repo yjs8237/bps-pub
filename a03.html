@@ -33,7 +33,7 @@
         <!-- Library : jQuery UI(datepicker) -->
         <link rel="stylesheet" href="assets/datepicker/jquery-ui.min.css">
         <script src="assets/datepicker/jquery-ui.min.js"></script>
-        <script src="assets/datepicker/datepicker-ko.js"></script>
+        <!-- <script src="assets/datepicker/datepicker-ko.js"></script> -->
         <!-- Reference -->
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/custom.css">
@@ -287,8 +287,8 @@
                                         </div>
                                     </div>
                                     <div class="table-pagination">
-                                        <a class="tp-first"><img src="/bbs_admin/assets/img/icon-arrow_left2.png" alt=""></a>
-                                        <a class="tp-prev"><img src="/bbs_admin/assets/img/icon-arrow_left.png" alt=""></i></a>
+                                        <a class="tp-first"><img src="assets/img/icon-arrow_left2.png" alt=""></a>
+                                        <a class="tp-prev"><img src="assets/img/icon-arrow_left.png" alt=""></i></a>
                                         <div class="tp-nav">
                                             <a class="pg_num">1</a>
                                             <a class="pg_num active">2</a> <!-- 활성화 class "active" -->
@@ -296,8 +296,8 @@
                                             <a class="pg_num">4</a>
                                             <a class="pg_num">5</a>
                                         </div>
-                                        <a class="tp-next"><img src="/bbs_admin/assets/img/icon-arrow_right.png" alt=""></i></a>
-                                        <a class="tp-last"><img src="/bbs_admin/assets/img/icon-arrow_right2.png" alt=""></i></a>
+                                        <a class="tp-next"><img src="assets/img/icon-arrow_right.png" alt=""></i></a>
+                                        <a class="tp-last"><img src="assets/img/icon-arrow_right2.png" alt=""></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -667,6 +667,313 @@
             <div class="top-close btn-close_modal"><i class="xi-close"></i></div>
         </div>
 
+        <!-- 2021-08-17 -->
+        <div class="modal-wrapper main-modal modal-excel_download width-600">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span class="mt-text">엑셀 다운로드</span>
+                </div>
+                <div class="breadcrumb">
+                    <a class="bc-item">Home</a>
+                    <a class="bc-item">가이드</a>
+                    <a class="bc-item">엑셀 다운로드</a>
+                </div>
+            </div>
+            
+            <div class="modal-content">
+                <div class="content-title">
+                    <span class="ct-title"></span>
+                </div>
+                
+                <div class="content-item flex-row-2">
+                    <div class="modal-check-list">
+                        <div class="modal-item checkbox_group mb-10 pb-10">
+                            <div class="modal-item_title mb-5">
+                                <div class="mi_check-item">
+                                    <label class="" for="checkall-01">QN#</label>
+                                    <input type="checkbox" id="checkall-01" class="check_all" name="checklist-01" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-03">QN#</label>
+                                    <input type="checkbox" id="check-03" class="check_normal" name="checklist-01" value="excel_choice">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="modal-item checkbox_group mb-10 pb-10">
+                            <div class="modal-item_title mb-5">
+                                <div class="mi_check-item">
+                                    <label class="" for="checkall-02">고객담당자</label>
+                                    <input type="checkbox" id="checkall-02" class="check_all" name="checklist-02" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-05">이름(관리지점)</label>
+                                    <input type="checkbox" id="check-05" class="check_normal" name="checklist-02" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-05">아이디</label>
+                                    <input type="checkbox" id="check-05" class="check_normal" name="checklist-02" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-06">연락처</label>
+                                    <input type="checkbox" id="check-06" class="check_normal" name="checklist-02" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-07">소속/지점</label>
+                                    <input type="checkbox" id="check-07" class="check_normal" name="checklist-02" value="excel_choice">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="modal-item checkbox_group mb-10 pb-10">
+                            <div class="modal-item_title mb-5">
+                                <div class="mi_check-item">
+                                    <label class="" for="checkall-03">고객정보</label>
+                                    <input type="checkbox" id="checkall-03" class="check_all" name="checklist-03" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-03">고객명</label>
+                                    <input type="checkbox" id="check-09" class="check_normal" name="checklist-03" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-09">고객연락처</label>
+                                    <input type="checkbox" id="check-09" class="check_normal" name="checklist-03" value="excel_choice">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="modal-item checkbox_group mb-10 pb-10">
+                            <div class="modal-item_title mb-5">
+                                <div class="mi_check-item">
+                                    <label class="" for="checkall-04">가이드</label>
+                                    <input type="checkbox" id="checkall-04" class="check_all" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-11">엔카</label>
+                                    <input type="checkbox" id="check-11" class="check_normal" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-12">Kcar</label>
+                                    <input type="checkbox" id="check-12" class="check_normal" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-13">KB차차차</label>
+                                    <input type="checkbox" id="check-13" class="check_normal" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-14">하우머치</label>
+                                    <input type="checkbox" id="check-14" class="check_normal" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-15">가이드평균</label>
+                                    <input type="checkbox" id="check-15" class="check_normal" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-16">Kcar 경매장</label>
+                                    <input type="checkbox" id="check-16" class="check_normal" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-17">Car Auction 경매장</label>
+                                    <input type="checkbox" id="check-17" class="check_normal" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-18">경매장가 평균</label>
+                                    <input type="checkbox" id="check-18" name="checklist-04" value="excel_choice">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="modal-item checkbox_group mb-10 pb-10">
+                            <div class="modal-item_title mb-5">
+                                <div class="mi_check-item">
+                                    <label class="" for="checkall-05">가이드 가격</label>
+                                    <input type="checkbox" id="checkall-05" class="check_all" name="checklist-05" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-20">가이드 가격</label>
+                                    <input type="checkbox" id="check-20" class="check_normal" name="checklist-05" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-21">가이드 전송 가격</label>
+                                    <input type="checkbox" id="check-21" class="check_normal" name="checklist-05" value="excel_choice">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-check-list">
+                        <div class="modal-item checkbox_group mb-10 pb-10">
+                            <div class="modal-item_title mb-5">
+                                <div class="mi_check-item">
+                                    <label class="" for="checkall-06">차량정보</label>
+                                    <input type="checkbox" id="checkall-06" class="check_all" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-23">브랜드</label>
+                                    <input type="checkbox" id="check-23" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-24">모델</label>
+                                    <input type="checkbox" id="check-24" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-25">세부모델</label>
+                                    <input type="checkbox" id="check-25" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-26">등급</label>
+                                    <input type="checkbox" id="check-26" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-27">트림</label>
+                                    <input type="checkbox" id="check-27" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-28">연식</label>
+                                    <input type="checkbox" id="check-28" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-29">연료</label>
+                                    <input type="checkbox" id="check-29" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-30">배기량</label>
+                                    <input type="checkbox" id="check-30" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-31">미션</label>
+                                    <input type="checkbox" id="check-31" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-32">주행거리</label>
+                                    <input type="checkbox" id="check-32" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-33">사고유무</label>
+                                    <input type="checkbox" id="check-33" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-34">색상</label>
+                                    <input type="checkbox" id="check-34" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-35">차량번호</label>
+                                    <input type="checkbox" id="check-35" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-36">주요옵션</label>
+                                    <input type="checkbox" id="check-36" class="check_normal" name="checklist-06" value="excel_choice">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="modal-item checkbox_group mb-10 pb-10">
+                            <div class="modal-item_title mb-5">
+                                <div class="mi_check-item">
+                                    <label class="" for="checkall-07">가이드 제출자 및 상태</label>
+                                    <input type="checkbox" id="checkall-07" class="check_all" name="checklist-07" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-38">이름</label>
+                                    <input type="checkbox" id="check-38" class="check_normal" name="checklist-07" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-39">연락처</label>
+                                    <input type="checkbox" id="check-39" class="check_normal" name="checklist-07" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-40">가이드상태</label>
+                                    <input type="checkbox" id="check-40" class="check_normal" name="checklist-07" value="excel_choice">
+                                </div>
+                            </div>
+                            <div class="modal-item_content border-none">
+                                <div class="mi_check-item">
+                                    <label for="check-41">차량위치</label>
+                                    <input type="checkbox" id="check-41" class="check_normal" name="checklist-07" value="excel_choice">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="mf_button btn-download hover01">엑셀 다운로드</button>
+                <button class="mf_button btn-close_modal hover02">닫기</button>
+            </div>
+            
+            <div class="top-close btn-close_modal"><i class="xi-close"></i></div>
+        </div>
+        <!-- //2021-08-17 -->
+
         <div class="modal-wrapper sub-modal modal-guide_price width-600">
             <div class="modal-header">
                 <div class="modal-title">
@@ -837,6 +1144,8 @@
         $('.btn-setting_guide').on('click', activeModal_GuidePrice);
         // 2021-08-12
         // $('.btn-setting_price').on('click', activeModal_DetailPrice);
+        // 2021-08-17
+        $('.btn-download_excel').on('click', activeModal_ExcelDownload);
 
         // 데이트피커
         $('#datepicker').datepicker({
@@ -855,6 +1164,24 @@
         })
         // http://daplus.net/javascript-%EC%9B%94%EB%B3%84-%EB%A7%8C-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-jquery-ui-datepicker/
         // //2021-08-12
+
+        // 2021-08-17
+        // 체크박스 전체 선택
+        $(".checkbox_group").on('click', '.check_all', function() {
+            $(this).parents(".checkbox_group").find('input').prop("checked", $(this).is(":checked"));
+        });
+
+        // 체크박스 개별 선택
+        $(".checkbox_group").on("click", ".check_normal", function() { // checkbox_group내 normal 클릭 시에
+            var is_checked = true; // boolean = true
+
+            $(".checkbox_group .check_normal").each(function(){ // checkbox_group내 각각 each에게,
+                is_checked = is_checked && $(this).is(":checked"); // is
+            });
+
+            // $(".check_all").prop("checked", is_checked);
+        });
+        // //2021-08-17
     });
 
     function activeModal_GuideDetail(){
@@ -871,4 +1198,9 @@
     //     $('.main-modal').css('z-index', '100');
     //     $('.modal-detail_price').addClass('active');
     // }
+    
+    function activeModal_ExcelDownload(){
+        openLayer();
+        $('.modal-excel_download').addClass('active');
+    }
 </script>
