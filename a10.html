@@ -380,10 +380,28 @@
                         </div>
                     </div>
 
-                    <div class="modal-item width-50p">
-                        <div class="modal-item_title">주요옵션</div>
+                    <div class="modal-item">
+                        <div class="modal-item_title">신차 가격(원)</div>
                         <div class="modal-item_content">
                             <input class="mi_input" type="text">
+                        </div>
+                    </div>
+
+                    <div class="modal-item width-100p">
+                        <div class="modal-item_title">기타 사항</div>
+                        <div class="modal-item_content">
+                            <input class="mi_input" type="text">
+                        </div>
+                    </div>
+
+                    <div class="modal-item width-100p">
+                        <div class="modal-item_title">옵션</div>
+                        <div class="modal-item_content">
+                            <div class="option-list">
+                                <span class="option-item">파노라마 썬루프</span>
+                                <span class="option-item">AUX</span>
+                                <span class="option-item">등등</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -404,7 +422,7 @@
                     </div>
                     
                     <div class="modal-item">
-                        <div class="modal-item_title">체크리스트 감가액</div>
+                        <div class="modal-item_title">점검 감가액</div>
                         <div class="modal-item_content border-box">
                             <input class="mi_input btn-setting_price" type="text">
                             <span class="bb-text">만원</span>
@@ -412,18 +430,25 @@
                     </div>
                     
                     <div class="modal-item">
-                        <div class="modal-item_title">최종 감가액</div>
+                        <div class="modal-item_title">평가사 감가액</div>
                         <div class="modal-item_content border-box">
                             <input class="mi_input btn-setting_price" type="text">
                             <span class="bb-text">만원</span>
                         </div>
                     </div>
-                    
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="content-title">
+                    <span class="ct-title">평가사 평가사유</span>
+                </div>
+                
+                <div class="content-item mt-15">
                     <div class="modal-item">
-                        <div class="modal-item_title">손해액</div>
-                        <div class="modal-item_content border-box">
-                            <input class="mi_input btn-setting_price" type="text">
-                            <span class="bb-text">만원</span>
+                        <div class="modal-item_title">평가사유</div>
+                        <div class="modal-item_content">
+                            <input class="mi_input" type="text" placeholder="평가사유를 입력해주세요.">
                         </div>
                     </div>
                 </div>
@@ -454,8 +479,41 @@
                         <div class="modal-item_title"></div>
                         <div class="modal-item_content border-none">
                             <div class="damage-check-container">
-                                <div class="dc-image"><img src="assets/img/img-sample2.png" alt=""></div>
-                                <div class="dc-ref mt-25 mb-25">체크리스트 설명란...</div>
+                                <div class="dc-image">
+                                    <div class="image-side"><img src="./assets/img/img-car_side.png" alt=""></div>
+                                    <div class="image-top"><img src="./assets/img/img-car_top.png" alt=""></div>
+                                    <div class="image-under"><img src="./assets/img/img-car_under.png" alt=""></div>
+                                </div>
+                                <div class="dc-ref mt-25 mb-25">
+                                    <div class="marking-item">
+                                        <span class="marker">A</span>
+                                        <span class="mi-desc">기교환</span>
+                                    </div>
+                                    <div class="marking-item">
+                                        <span class="marker">B</span>
+                                        <span class="mi-desc">기판금</span>
+                                    </div>
+                                    <div class="marking-item">
+                                        <span class="marker">C</span>
+                                        <span class="mi-desc">기도색</span>
+                                    </div>
+                                    <div class="marking-item">
+                                        <span class="marker">D</span>
+                                        <span class="mi-desc">교환요망</span>
+                                    </div>
+                                    <div class="marking-item">
+                                        <span class="marker">E</span>
+                                        <span class="mi-desc">판금요망</span>
+                                    </div>
+                                    <div class="marking-item">
+                                        <span class="marker">F</span>
+                                        <span class="mi-desc">도색요망</span>
+                                    </div>
+                                    <div class="marking-item">
+                                        <span class="marker">G</span>
+                                        <span class="mi-desc">기타</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -464,22 +522,98 @@
 
             <div class="modal-content">
                 <div class="content-title">
-                    <span class="ct-title">체크 리스트</span>
+                    <span class="ct-title">데미지 체크 세부 내역</span>
                 </div>
 
-                <div class="content-item w100p pb-10">
-                    <div class="modal-item mt-15">
-                        <div class="modal-item_title"></div>
-                        <div class="modal-item_content border-none">
-                            <div class="check_item-list">
-                                <div class="check_item">체크리스트 1번 : 엔진 개스킷류 누유 진단 (실린더 헤드 개스킷 등)</div>
-                                <div class="check_item">체크리스트 2번 : 엔진 개스킷류 누유 진단 (실린더 헤드 개스킷 등)</div>
-                                <div class="check_item">체크리스트 3번 : 엔진 개스킷류 누유 진단 (실린더 헤드 개스킷 등)</div>
-                                <div class="check_item">체크리스트 4번 : 엔진 개스킷류 누유 진단 (실린더 헤드 개스킷 등)</div>
-                                <div class="check_item">체크리스트 5번 : 엔진 개스킷류 누유 진단 (실린더 헤드 개스킷 등)</div>
-                                <div class="check_item">체크리스트 6번 : 엔진 개스킷류 누유 진단 (실린더 헤드 개스킷 등)</div>
-                                <div class="check_item">체크리스트 7번 : 엔진 개스킷류 누유 진단 (실린더 헤드 개스킷 등)</div>
-                            </div>
+                <div class="content-item flex-row-3 mt-15">
+                    <div class="modal-item">
+                        <div class="modal-item_title">교환 (판수/원)</div>
+                        <div class="modal-item_content">
+                            <span class="ci-count">3 판</span>
+                            <span class="ci-price">600,000 원</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-item">
+                        <div class="modal-item_title">판금/용접 (판수/원)</div>
+                        <div class="modal-item_content">
+                            <span class="ci-count">3 판</span>
+                            <span class="ci-price">600,000 원</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-item">
+                        <div class="modal-item_title">부식 (판수/원)</div>
+                        <div class="modal-item_content">
+                            <span class="ci-count">3 판</span>
+                            <span class="ci-price">600,000 원</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-item">
+                        <div class="modal-item_title">흠집 (판수/원)</div>
+                        <div class="modal-item_content">
+                            <span class="ci-count">3 판</span>
+                            <span class="ci-price">600,000 원</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-item">
+                        <div class="modal-item_title">요철 (판수/원)</div>
+                        <div class="modal-item_content">
+                            <span class="ci-count">3 판</span>
+                            <span class="ci-price">600,000 원</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-item">
+                        <div class="modal-item_title">손상 (판수/원)</div>
+                        <div class="modal-item_content">
+                            <span class="ci-count">3 판</span>
+                            <span class="ci-price">600,000 원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal-content">
+                <div class="content-title">
+                    <span class="ct-title">체크리스트</span>
+                </div>
+
+                <div class="content-item mt-15">
+                    <div class="modal-item width-40p">
+                        <div class="modal-item_title">체크리스트 합계</div>
+                        <div class="modal-item_content border-box">
+                            <input class="mi_input" type="text">
+                            <span class="bb-text">만원</span>
+                        </div>
+                    </div>
+
+                    <div class="checked-item-list">
+                        <div class="checked-item">
+                            <p class="ci-tit">차량 내부 크리닝 필요</p>
+                            <p class="ci-price">300,000 원</p>
+                        </div>
+                        <div class="checked-item">
+                            <p class="ci-tit">로커암 개스킷 누유</p>
+                            <p class="ci-price">300,000 원</p>
+                        </div>
+                        <div class="checked-item">
+                            <p class="ci-tit">타이어 마모 [3 EA]</p>
+                            <p class="ci-price">300,000 원</p>
+                        </div>
+                        <div class="checked-item">
+                            <p class="ci-tit">타이어 마모 [기타]</p>
+                            <p class="ci-price">800,000 원</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-item width-100p">
+                        <div class="modal-item_title">타이어마모 기타 사유</div>
+                        <div class="modal-item_content border-box">
+                            <input class="mi_input" type="text">
                         </div>
                     </div>
                 </div>

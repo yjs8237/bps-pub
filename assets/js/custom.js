@@ -29,6 +29,7 @@ $(function(){
     
     // 테이블 자동화
     AutoTableSetting();
+    autoPopupTableSetting();
 });
 // 레이어 오픈
 function openLayer(){
@@ -105,6 +106,31 @@ function AutoTableSetting(){
     for($i = 0; $i < $(table_item).length; $i++){
         for($j = 0; $j < item_count; $j++){
             $(table_item).eq($i).children().eq($j).css('width', set_width[$j] + '%');
+        }
+    }
+}
+
+// 팝업 테이블 자동화
+function autoPopupTableSetting(){
+    let table_storage = $('.pc-table-wrapper');
+
+    for(let i = 0; i < table_storage.length; i++){
+        let table = table_storage[i];
+
+        let table_header = $(table).find('.ti-header .t-item');
+        let table_item = $(table).find('.item-list .t-item');
+        let item_count = $(table).find('.ti-header .t-item').children().length;
+
+        let set_width = [];
+
+        for($i = 0; $i < item_count; $i++){
+            set_width[$i] = $(table_header).children().eq($i).data('width');
+        }
+
+        for($i = 0; $i < $(table_item).length; $i++){
+            for($j = 0; $j < item_count; $j++){
+                $(table_item).eq($i).children().eq($j).css('width', set_width[$j] + '%');
+            }
         }
     }
 }
