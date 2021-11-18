@@ -107,7 +107,7 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
 .content-wrapper .content-body .content-item .content-item-header .cih-title .current-date {font-weight: 400;}
 
 .content-wrapper .content-body .content-item .content-item-header .header-option {display: flex;}
-.content-wrapper .content-body .content-item .content-item-header .header-option .option-title {display: inline-block; min-width: 40px; word-break: keep-all; margin-right: 12px; font-weight: 700; color: #8f8f8f;}
+.content-wrapper .content-body .content-item .content-item-header .header-option .option-title {flex-shrink: 0; display: inline-block; min-width: 40px; word-break: keep-all; margin-right: 12px; font-weight: 700; color: #8f8f8f;}
 .content-wrapper .content-body .content-item .content-item-header .header-option .search-option {display: flex; align-items: center; margin-right: 5px;}
 .content-wrapper .content-body .content-item .content-item-header .header-option .search-option .so_input {min-width: 250px; width: 100%; background-color: #fff; border: 1px solid #c1c8d8; padding: 8px 10px; color: #000;}
 .content-wrapper .content-body .content-item .content-item-header .etc-option {position: absolute; right: 0;}
@@ -116,12 +116,16 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
 .content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus {display: none; position: absolute; top: calc(100% - 4px); right: 0; min-width: 120px; background-color: #283046; box-shadow: 0 4px 24px 0 rgb(0 0 0 / 24%); padding: 0; border-radius: 4px; color: #fff;}
 .content-wrapper .content-body .content-item .content-item-header .etc-option.active .eo-menus {display: block; z-index: 5;}
 .content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-download_excel {padding: 10px; cursor: pointer; background-color: #00bfa5; border-radius: 4px 4px 0 0;}
-.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-regi_post {padding: 10px; cursor: pointer; border-bottom: 1px solid #fff; background-color: #283046; border-radius: 0;}
-.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-regi_model {padding: 10px; cursor: pointer; border-bottom: 1px solid #fff; background-color: #283046; border-radius: 0;}
-.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .view-option {border-top: none;}
+.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-regi_post {padding: 10px; cursor: pointer; background-color: #283046; border-radius: 0;}
+.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-regi_model {padding: 10px; cursor: pointer; background-color: #283046; border-radius: 0;}
+.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-modal {padding: 10px; cursor: pointer; background-color: #283046; border-radius: 0; transition: background-color 0.15s ease-in-out;}
+.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-modal:hover {background-color: rgba(115, 103, 240, 0.12);}
+.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .btn-modal:last-child {border-bottom: 1px solid #fff;}
+.content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .view-option {border-top: 1px solid #fff;}
 .content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .view-option .vo-item {padding: 10px; cursor: pointer; transition: background-color 0.15s ease-in-out;}
 .content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .view-option .vo-item:hover {background-color: rgba(115, 103, 240, 0.12);}
 .content-wrapper .content-body .content-item .content-item-header .etc-option .eo-menus .view-option .vo-item.active {background-color: rgba(115, 103, 240, 0.12);}
+
 
 .content-wrapper .content-body .content-item .content-item-body {margin-top: 20px;}
 .guide-item-header {}
@@ -210,6 +214,22 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
 .modal .modal-wrapper .modal-content .content-item .checked-item-list .checked-item .ci-tit {font-size: 16px; font-weight: 500; color: #fff;}
 .modal .modal-wrapper .modal-content .content-item .checked-item-list .checked-item .ci-price {font-size: 14px; font-weight: 400; color: #fff; margin-top: 10px;}
 
+.modal .modal-wrapper .modal-content .content-item .account-wrap {display: flex; align-items: center;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .awl {flex: 1;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .awr {flex: 1;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .account-item {margin-bottom: 8px; background-color: rgb(51, 136, 248); color: #fff; padding: 8px; border-radius: 2px;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .account-item.active {background-color: rgb(255, 245, 98); color: #000;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .account-item:last-child {margin-bottom: 0;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .account-item .ai-tit {font-size: 14px;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .account-item .ai-price {font-size: 20px; font-weight: 700; text-align: right; margin-top: 20px;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .awl .ai-price {margin-top: 12px;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .account-item .plus {font-size: 30px; font-weight: 700; text-align: center;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc {position: relative; display: flex; flex-direction: column; justify-content: center; flex: 1; height: 180px; margin: 0 40px; padding: 30px 20px; border-radius: 2px; background-color: rgb(107, 116, 202); color: #fff;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc::after {position: absolute; top: 50%; left: -26px; transform: translateY(-50%); content: '-'; font-size: 40px; font-weight: 700; color: #000;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc::before {position: absolute; top: 50%; right: -30px; transform: translateY(-50%); content: '='; font-size: 36px; font-weight: 700; color: #000;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc .awc-tit {position: absolute; top: 30px; left: 20px; font-size: 14px;}
+.modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc .awc-price {font-size: 24px; font-weight: 700; text-align: center;}
+
 .modal .modal-wrapper .modal-content.content-type02 {background-color: rgb(107, 116, 202); color: #fff;}
 .modal .modal-wrapper .modal-content.content-type02 .content-item .modal-item .modal-item_content {text-align: right; border-bottom: none;}
 .modal .modal-wrapper .modal-content.content-type02 .content-item .modal-item .modal-item_content .total-price {font-size: 2.4rem; font-weight: 500;}
@@ -241,6 +261,19 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
   .modal .modal-wrapper .modal-content .content-item .checked-item-list {gap: 12px;}
   .modal .modal-wrapper .modal-content .content-item .checked-item-list .checked-item {width: 100%; padding: 8px 0;}
   .modal .modal-wrapper .modal-content .content-item .checked-item-list .checked-item .ci-price {margin-top: 6px;}
+
+  .modal .modal-wrapper .modal-content .content-item .account-wrap {flex-direction: column;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .awl {display: flex; flex-wrap: wrap;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .awl .account-item {width: calc(50% - 4px);}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .awl .account-item:nth-child(2n) {margin-left: 8px;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .awr {display: flex; flex-direction: column; width: 100%; margin-top: 8px;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .awr .account-item {width: 100%; margin-bottom: 8px;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .awr .account-item:last-child {margin-bottom: 0;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc {width: 100%; margin: 40px 0;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc::after {top: -55px; left: 50%; transform: translateX(-50%);}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc::before {top: unset; bottom: -45px; right: 50%; transform: translateX(50%);}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .aw-calc .awc-tit {top: 10px; left: 10px;}
+  .modal .modal-wrapper .modal-content .content-item .account-wrap .account-item:last-child {margin-bottom: 8px;}
 }
 
 /****************************** 공용 스타일링 ******************************/
@@ -267,7 +300,9 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
 .flex-wrap {display: flex; flex-wrap: wrap;}
 .flex-align {display: flex; align-items: center;}
 .flex-align-center {display: flex; justify-content: center; align-items: center;}
+.flex-align-end {display: flex; justify-content: flex-end; align-items: center;}
 .flex-between {display: flex; justify-content: space-between;}
+.flex-column {display: flex; flex-direction: column;}
 .flex-row-2 {display: flex; flex-wrap: wrap;}
 .flex-row-2 > div {width: calc((100% / 2) - 6px); margin: 0 12px 12px 0;}
 .flex-row-2 > div:nth-child(2n) {margin-right: 0;}
@@ -574,6 +609,7 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
 .modal-check-list .modal-item {border-bottom: 1px solid #eee;}
 .modal-check-list .modal-item_content {}
 .modal-check-list .mi_check-item {display: flex; justify-content: space-between; align-items: center; width: 90%;}
+.modal-check-list .modal-item_content .mi_check-item {text-indent: 12px;}
 .modal-check-list .modal-item_title .mi_check-item label {font-size: 1.5rem; font-weight: 500; color: #000;}
 
 .table-wrapper .table .table-body .item-list .t-item .td button {display: inline-flex; align-items: center; background-color: transparent; border: none; padding: 0; border-radius: 4px; cursor: pointer; margin-right: 4px;}
@@ -585,3 +621,15 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
 .table-wrapper .table .table-body .item-list .t-item .td .btn-up::after {content: ''; display: inline-flex; justify-content: center; align-items: center; width: 24px; height: 24px; background: #003154 url('../img/arrow_drop_up_white_24dp.svg') center center no-repeat; background-size: cover; border-radius: 4px;}
 .table-wrapper .table .table-body .item-list .t-item .td .btn-down {}
 .table-wrapper .table .table-body .item-list .t-item .td .btn-down::after {content: ''; display: inline-flex; justify-content: center; align-items: center; width: 24px; height: 24px; background: #003154 url('../img/arrow_drop_down_white_24dp.svg') center center no-repeat; background-size: cover; border-radius: 4px;}
+
+/* 탭 화면 */
+.tab-container {margin-top: 20px;}
+.tab-container .tab-header {display: flex; justify-content: flex-end;}
+.tab-container .tab-header .btn-tab {display: inline-flex; justify-content: center; align-items: center; min-width: 80px; padding: 4px 8px; color: #000; border: 1px solid #283046; border-radius: 2px; cursor: pointer; margin-left: 12px;}
+.tab-container .tab-header .btn-tab.active {background-color: #283046; border: 1px solid #283046; color: #fff;}
+.tab-container .tab-cont .tab {display: none;}
+.tab-container .tab-cont .tab.active {display: block;}
+.tab-container .tab-cont .tab .tab-title {display: flex; align-items: center; justify-content: space-between; margin-top: 12px;}
+.tab-container .tab-cont .tab .tab-title .tit-desc {font-size: 16px; font-weight: 700; color: #000;}
+.tab-container .tab-cont .tab .tab-title .add-outcome_item {display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; font-size: 20px; color: #fff; background-color: #283046; border: 1px solid #283046; border-radius: 2px; cursor: pointer; transition: background-color 0.35s, color 0.35s;}
+.tab-container .tab-cont .tab .tab-title .add-outcome_item:hover {background-color: #fff; color: #000;}
