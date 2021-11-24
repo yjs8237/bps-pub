@@ -462,14 +462,14 @@
                                 <div class="modal-item">
                                     <div class="modal-item_title">낙찰일</div>
                                     <div class="modal-item_content">
-                                        <input class="mi_input modal-datepicker" type="text">
+                                        <input class="mi_input modal-datepicker2" type="text">
                                     </div>
                                 </div>
             
                                 <div class="modal-item">
                                     <div class="modal-item_title">입금일</div>
                                     <div class="modal-item_content">
-                                        <input class="mi_input modal-datepicker" type="text">
+                                        <input class="mi_input modal-datepicker2" type="text">
                                     </div>
                                 </div>
             
@@ -971,9 +971,23 @@
             dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] 
         });
 
-        
         $('.modal-datepicker').datepicker({
             dateFormat: 'yy/mm',
+            monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNamesMin: ['일','월','화','수','목','금','토'],
+            dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] ,
+            changeYear: true,
+            changeMonth: true,
+            showButtonPanel: true,
+            showMonthAfterYear: true,
+            onClose: function (dateText, inst) {
+                $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+            }
+        })
+        
+        $('.modal-datepicker2').datepicker({
+            dateFormat: 'yy-mm-dd',
             monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
             monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
             dayNamesMin: ['일','월','화','수','목','금','토'],
