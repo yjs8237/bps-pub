@@ -1357,10 +1357,18 @@
             changeMonth: true,
             showButtonPanel: true,
             showMonthAfterYear: true,
-            onClose: function (dateText, inst) {
-                $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
-            }
-        })
+            // onClose: function (dateText, inst) {
+            //     $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+            // }
+        }).focus(function() {
+            var thisCalendar = $(this);
+            $('.ui-datepicker-calendar').detach();
+            $('.ui-datepicker-close').click(function() {
+                var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                thisCalendar.datepicker('setDate', new Date(year, month, 1));
+            });
+        });
         // http://daplus.net/javascript-%EC%9B%94%EB%B3%84-%EB%A7%8C-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-jquery-ui-datepicker/
         // //2021-08-12
 
