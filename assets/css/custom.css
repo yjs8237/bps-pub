@@ -347,6 +347,17 @@ html, body {width: 100%; min-height: 100%; height: 100%; background-color: #f5f7
 .bg-color-05 {background-color: rgb(90, 111, 185); color: #fff;}
 .bg-color-06 {background-color: rgb(90, 111, 185); color: #fff;}
 
+.guide-color-01 {background-color: #FFD400; color: #fff;} /* 노랑 */
+.guide-color-02 {background-color: #0000FF; color: #fff;} /* 파랑 */
+.guide-color-03 {background-color: #FFA048; color: #fff;} /* 주황 */
+.guide-color-04 {background-color: #F05650; color: #fff;} /* 옅은빨강 */
+.guide-color-05 {background-color: #FF3399; color: #fff;} /* 분홍 */
+.guide-color-06 {background-color: #87CEEB; color: #fff;} /* 하늘 */
+.guide-color-07 {background-color: #48B8D9; color: #fff;} /* 짙은하늘 */
+.guide-color-08 {background-color: #FFFFFF; color: #fff;} /* 흰색 */
+
+
+
 .p-red {color: red; font-size: 1.3rem;}
 .sub-text {color: #999; font-size: 1.3rem;}
 
